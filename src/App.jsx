@@ -53,7 +53,7 @@ function App() {
 
       console.log("fetch running");
       try {
-        const resp = await fetch(`http://www.omdbapi.com/?s=${search}&page=${page}&apikey=64d40c11`)
+        const resp = await fetch(`https://www.omdbapi.com/?s=${search}&page=${page}&apikey=64d40c11`)
         const data = await resp.json()
         if(!resp.Response){
           setMovies(data)
